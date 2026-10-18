@@ -285,7 +285,7 @@ const Courses = () => {
           Hero
       ----------------------------------------------------- */}
 
-      <section className="relative overflow-hidden">
+      <section className="relative ">
         <div className="mx-auto max-w-7xl px-6 pb-16 pt-28 md:pb-20 md:pt-36">
 
           <div className="mx-auto max-w-3xl text-center">
@@ -310,7 +310,7 @@ const Courses = () => {
             </p>
 
             {/* Search */}
-            <div className="relative mx-auto mt-8 max-w-2xl">
+            <div className="relative mx-auto h-auto mt-8 max-w-2xl">
 
               <div className="flex items-center rounded-2xl border border-zinc-200 bg-white p-2 shadow-lg shadow-zinc-200/50 dark:border-zinc-800 dark:bg-zinc-900 dark:shadow-black/20">
 
@@ -347,7 +347,7 @@ const Courses = () => {
 
               {/* Search results */}
               {showSearchResults && (
-                <div className="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-xl border border-zinc-200 bg-white text-left shadow-xl dark:border-zinc-800 dark:bg-zinc-900">
+                <div className="absolute left-0 right-0 top-full  z-50 mt-2 overflow-hidden rounded-xl border border-zinc-200 bg-white text-left shadow-xl dark:border-zinc-800 dark:bg-zinc-900">
 
                   {searchResults.slice(0, 6).map((course) => (
                     <Link
@@ -366,11 +366,11 @@ const Courses = () => {
                     </Link>
                   ))}
 
-                  {searchResults.length > 6 && (
+                  {/* {searchResults.length > 6 && (
                     <div className="px-5 py-3 text-center text-sm text-purple-600">
                       View all search results
                     </div>
-                  )}
+                  )} */}
                 </div>
               )}
 
